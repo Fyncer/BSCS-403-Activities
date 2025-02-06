@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STI Enrollment Form</title>
+    <link rel="stylesheet" href="STI_enrollment.css">
+</head>
+<body>
+    <h1>Enroll</h1>
+    <video width="320" height="240" autoplay>
+        <source src="Enrollment.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <form>
+        <div id="nameField">
+            <p>Please enter your name: </p>
+            <input class="nameinput" type="text" placeholder="Last Name">
+            <input class="nameinput" type="text" placeholder="First Name">
+            <input class="nameinput" type="text" placeholder="Middle Name">
+        </div>
+        <div id="personalInfo">
+            <p>Enter personal address: </p>
+            <input class="addressinput" type="text" placeholder="Email Address">
+            <input class="addressinput" type="text" placeholder="Home Address">
+        </div>
+        <br>
+        <div id="studentType">
+            <p>Enrollee Type: </p>
+            <input type="radio" id="radio1" value="regular">
+            <label for="radio1">Regular</label><br>
+            <input type="radio" id="radio1" value="irregular">
+            <label for="radio1">Irregular</label><br>
+            <input type="radio" value="transferee">
+            <label for="radio1">Transferee</label>
+        </div>
+        <input type="submit" value="Submit">
+        <input type="reset" value="Reset">
+    </form>
+</body>
+</html>
