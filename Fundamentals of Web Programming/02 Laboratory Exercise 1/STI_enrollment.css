@@ -1,14 +1,8 @@
-* { 
-    font-family: 'Inter', sans-serif;
-}
+* { font-family: 'Inter', sans-serif; }
+body { margin: 0; }
+html {scroll-behavior: smooth;}
 
-body { 
-    margin: 0; 
-}
-
-.nameinput, .addressinput { 
-    display: block; 
-}
+.nameinput, .addressinput { display: block; }
 
 #viewer {
     position: absolute;
@@ -17,10 +11,9 @@ body {
     display: none;
     justify-content: center;
     align-items: center;
-    height: 100vh;
-    width: 100%;
-    background-color: #000;
-    opacity: 1; 
+    inset: 0;
+    background: #000;
+    opacity: 1;
 }
 
 #viewer > button {
@@ -39,10 +32,9 @@ body {
 }
 
 #viewer > button > * { display: inline; }
-
 video { height: 100%; margin: 0; }
 
-#watch{
+#watch {
     height: 100vh;
     display: flex;
 }
@@ -54,22 +46,19 @@ video { height: 100%; margin: 0; }
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 0 0 0 50px;
+    padding-left: 50px;
 }
 
-#watchheader > h1{
+#watchheader > h1 {
     font-weight: 400;
     letter-spacing: -3px;
     font-size: 80px;
     line-height: 0.9;
-    margin: 10% 0 10% 0;
+    margin: 10% 0;
 }
+
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 400,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
 }
 
 #playbutton {
@@ -88,25 +77,115 @@ video { height: 100%; margin: 0; }
     transition: background-color 0.2s, color 0.2s;
 }
 
-#playbutton > span { 
-    color: black; 
-    transition: color 0.2s;
-}
-
-#playbutton:hover {
-    background-color: black;
-    color: white;
-}
-
-#playbutton:hover > span {
-    color: white;
-}
-
+#playbutton > span { transition: color 0.2s; }
+#playbutton:hover { background: goldenrod; color: black; }
+#playbutton:hover > span { color: black; }
 
 #thumbnail {
-    height: 100%;
     width: 50%;
-    background-image: url("video_thumbnail.png");
-    background-position: center;
-    background-size: cover;
+    background: url("video_thumbnail.png") center/cover;
 }
+
+#enrollment {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.addressinput, .nameinput {
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 12pt;
+    font-weight: 300;
+    border: solid black;
+    border-width: 0 0 1px 0; /* Default: only bottom border */
+    outline: none; /* Remove default outline */
+}
+
+.addressinput:focus, .nameinput:focus {
+    border: 1px solid black; /* Full border on focus */
+    border-radius: 10px;
+}
+
+#enrollment {
+    border-top: 1px solid black;
+}
+
+form {
+    width: 65%;
+}
+
+#textfields {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 100px;
+    margin: 0 auto;
+}
+
+.nameinputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.addressinputs {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+#studentType {
+    display: flex;
+    align-items: center; /* Aligns text and radio buttons vertically */
+    gap: 10px; /* Adds space between elements */
+}
+
+input[type="radio"] {
+    appearance: none; /* Removes default styles */
+    width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+}
+
+input[type="radio"]:checked {
+    background-color: goldenrod ; /* Turns solid black when selected */
+}
+
+#studentType > label {
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle; /* Ensures text aligns with the radio button */
+    cursor: pointer; /* Makes clicking the label easier */
+}
+
+#reset, #submit {
+    font-size: 18pt;
+    padding: 15px 30px;
+    margin: 50pt 0;
+    border: 1px solid black;
+    border-radius: 50px;
+    background-color: transparent;
+}
+
+#submit {
+    background-color: black;
+    color: white;
+    transition: 0.2s;
+}
+
+#submit:hover {
+    background-color: goldenrod;
+    color: black;
+}
+
+
+
