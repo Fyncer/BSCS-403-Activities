@@ -1,5 +1,3 @@
-<!--Alam kong kinokopya mo 'to Marvin Fabricante-->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,13 +15,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital@0;1&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        
-    </header>
     <section id="watch">
         <div id="watchheader">
             <h1>Keep looking up</span><br>and moving<br>forward</h1>
-            <p>Click below to play the enrollment ad</p>
+            <p>Click below to play the STI's enrollment ad</p>
             <button id="playbutton">
                 <span class="material-symbols-outlined">
                     play_arrow
@@ -44,37 +39,45 @@
     </section>  
     <section id="enrollment">
         <form>
+            <h1>Enrollment Form</h1>
             <p id="formInstruction">Please fill up the required information</p>
-            <div id="textfields">
-                <div class="nameinputs">
-                    <label for="firstname">First Name</label>
-                    <input class="nameinput" id="firstname" type="text">
-                    <label for="middlename">Middle Name</label>
-                    <input class="nameinput" id="middlename" type="text">
-                    <label for="lastname">Last Name</label>
-                    <input class="nameinput" id="lastname" type="text">
+            <div id="inputFields">
+                <div class="field">
+                    <label class="inputlabel" for="firstname">First Name</label>
+                    <input class="textinput" id="firstname" type="text">
                 </div>
-                <div class="addressinputs">
-                    <label for="contactNumber">Contact Number</label>
+                <div class="field">
+                    <label class="inputlabel" for="contactNumber">Contact Number</label>
                     <input class="addressinput" id="contactNumber" type="text">
-                    <label for="email">Email</label>
+                </div>
+                <div class="field">
+                    <label class="inputlabel" for="middlename">Middle Name</label>
+                    <input class="nameinput" id="middlename" type="text">
+                </div>
+                <div class="field">
+                    <label class="inputlabel" for="email">Email</label>
                     <input class="addressinput" id="email" type="text">
                 </div>
-            </div>            
-                <br>
+                <div class="field">
+                    <label class="inputlabel" for="lastname">Last Name</label>
+                    <input class="nameinput" id="lastname" type="text">
+                </div> 
+                <div id="studentType">
+                    <p>Enrollee Type: </p>
+                    <div>
+                        <input type="radio" id="regular" name="enrolleeType" value="regular">
+                        <label for="regular">Regular</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="irregular" name="enrolleeType" value="irregular">
+                        <label for="irregular">Irregular</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="transferee" name="enrolleeType" value="transferee">
+                        <label for="transferee">Transferee</label>
+                    </div>
+                </div>          
             </div>
-            <div id="studentType">
-                <p>Enrollee Type: </p>
-                <input type="radio" id="regular" name="enrolleeType" value="regular">
-                <label for="regular">Regular</label>
-            
-                <input type="radio" id="irregular" name="enrolleeType" value="irregular">
-                <label for="irregular">Irregular</label>
-            
-                <input type="radio" id="transferee" name="enrolleeType" value="transferee">
-                <label for="transferee">Transferee</label>
-            </div>
-            
             <input id="reset" type="reset" value="Reset">
             <input id="submit" type="submit" value="Submit">
         </form>

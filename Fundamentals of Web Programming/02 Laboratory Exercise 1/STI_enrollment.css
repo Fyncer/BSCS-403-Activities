@@ -1,24 +1,12 @@
 /* Skibidi CSSmaxxxing */
 
-.remove-scrolling { /* Disable scrolling if play button clicked */
-    height: 100%; 
-    overflow: hidden; 
-} 
-
 * { font-family: 'Inter', sans-serif; } /* Use this font for the entire page */
 html {scroll-behavior: smooth;} /* Enable smooth scrolling */
-body {
-    margin: 0;
-}
+body {margin: 0;}
 
-header {
-    background-color: goldenrod;
-}
+header {background-color: #FFC436; }
 
-#watch { /* Enrollment ad section */
-    height: 100vh;
-    display: flex;
-}
+#watch {height: 100vh;display: flex;}
 #watchheader { /* Enrollment ad header */
     width: 50%;
     height: 100%;
@@ -28,7 +16,7 @@ header {
     align-items: flex-start;
     padding-left: 50px;
 }
-#watchheader > h1{ /* "Keep moving up and moving forward" */
+#watchheader > h1, form > h1{ /* "Keep moving up and moving forward" */
     font-weight: 400;
     letter-spacing: -3px;
     font-size: 80px;
@@ -52,33 +40,50 @@ header {
 }
 
 .material-symbols-outlined {
-  font-variation-settings:
-  'FILL' 1,
-  'wght' 300,
-  'GRAD' 0,
-  'opsz' 24
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
 }
 
 #playbutton > span { transition: color 0.2s;} /* Play button icon */
 
-
 /* Change colors if play button is hovered */
-#playbutton:hover { background: goldenrod; color: black; } 
-#playbutton:hover > span { color: black; }
+#playbutton:hover { background: #256a94; color: #FFC436; } 
+#playbutton:hover > span { color: #FFC436; }
 
-#thumbnail { width: 50%; background: url("video_thumbnail.png") center/cover;} /* Tourism student image (Clickbate) */
+#thumbnail {
+    background-image: url("video_thumbnail.png");
+    width: 60%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
 
 #viewer { /* Black background behind the actual video */
-    position: absolute;
+    position: fixed;
     top: 0;
     margin: 0;
     display: none;
     justify-content: center;
     align-items: center;
     inset: 0;
-    background: #000;
-    opacity: 1;
+    background: rgba(0,0,0, 0.92);
+    opacity: 0;
+    transition: opacity 0.2s ease-in-out;
 }
+
+#viewer.show {
+    display: flex; /* Ensure it's visible */
+    opacity: 1; /* Fade-in effect */
+}
+
+#viewer.hide {
+    opacity: 0; /* Fade-out effect */
+}
+
 #viewer > button { /* Close button */
     position: absolute;
     top: 0; right: 0;
@@ -95,63 +100,53 @@ header {
 }
 #viewer > button > * { display: inline; } /* Align close button's icon and text */
 
-video { height: 100%; margin: 0; } /* Enrollment.mp4 */
+video { height: 100%; margin: 0; position: fixed;} /* Enrollment.mp4 */
 
-#enrollment { /* Enrollment Section */
-    padding: 10% 0;
+#enrollment {
+    border: 1px solid black;
+    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    background-color: goldenrod;
-    border-top: 1px solid black;
 }
 
-#formInstruction { margin:px 0; } /* "Please fill up the required information */
-
-.addressinput, .nameinput { /* Textfield default state */
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 18pt;
-    font-weight: 300;
-    background-color: transparent;
-    border: solid black;
-    border-width: 0 0 1px 0; 
-    outline: none; 
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+#formInstruction {
+    margin: 10px 0 50px 0;
 }
 
-.addressinput:focus, .nameinput:focus {  /* apply effects when textfield is used */
-    border: 1px solid black; 
-    border-radius: 10px;
+form {padding-left: 50px;}
+
+form > h1 {
+    font-size: 50pt;
+    font-weight: 400;
+    margin: auto auto 0 auto;
 }
 
-form {width: 65%;} /* set form width to 65% of enrollment section's */
+#inputFields {display: grid; grid-template-columns: auto auto;}
 
-#textfields { /* div containing addressinputs and name inputs div */
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0 auto;
+.field, #studentType {padding: 30px 0;}
+.field > * {display: block;}
+.field > input {
+    width: 90%;
+    border: 0px solid black; /* Set a default border */
+    border-bottom-width: 1px; /* Only bottom border visible initially */
+    font-size: 15pt;
+    font-weight: 400;
+    padding: 15pt 10pt;
+    margin: 5px 0 0 0;
+    transition: border 0.3s ease, background-color 0.3s ease;
 }
 
-#studentType { /* div for radio buttons */
-    display: flex;
-    align-items: center; 
-    gap: 10px; 
+.field > input:focus {
+    background-color: #FFC436;
 }
 
-#studentType > label { /* Student Type */ 
-    font-size: 16px;
-    font-weight: 300;
-    vertical-align: middle; 
-    cursor: pointer;
-}
+#studentType > p {display: block;margin: 0;}
+#studentType > * {display: inline-block;}
+#studentType > div {padding: 15pt 15pt 0 0;}
+#studentType > div > label {font-size: 15pt;}
 
-input[type="radio"] { /* Radio buttons default style */
+input[type=radio] {
     appearance: none; 
     width: 40px;
     height: 40px;
@@ -161,23 +156,32 @@ input[type="radio"] { /* Radio buttons default style */
     position: relative;
     cursor: pointer;
     vertical-align: middle;
+    transition: background-color 0.3s ease-in-out;
 }
+input[type=radio]:hover {background-color: #256a94;}
+input[type=radio]:checked {background-color: #FFC436;}
 
-input[type="radio"]:checked {  /* Radio buttons' style if checked */
-    background-color: black; 
-}
-
-#reset, #submit { /* Reset and Submit button default style */
-    background: transparent;
+#reset, #submit {
+    background-color: transparent;
     border: 1px solid black;
     border-radius: 50px;
-    font-size: 20px;
-    padding: 12px 25px;
-    margin: 35px 0 0 0;
+    padding: 15px 40pt;
+    margin: 0 5pt 0 0;
+    font-size: 15pt;
     transition: 0.2s;
 }
 
-#submit:hover, #reset:hover{ /* Reset and Submit button style if hovered */
+#reset:hover {
     background-color: black;
-    color: goldenrod;
+    color: white;
 }
+
+#submit:hover {
+    background: #256a94;
+    color: #FFC436;
+}
+
+.remove-scrolling {
+    height: 100%; 
+    overflow: hidden; 
+} 
