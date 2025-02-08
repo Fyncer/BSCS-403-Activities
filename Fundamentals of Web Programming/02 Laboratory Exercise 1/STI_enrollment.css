@@ -1,45 +1,25 @@
-* { font-family: 'Inter', sans-serif; }
-body { margin: 0; }
-html {scroll-behavior: smooth;}
+/* Skibidi CSSmaxxxing */
 
-.nameinput, .addressinput { display: block; }
+.remove-scrolling { /* Disable scrolling if play button clicked */
+    height: 100%; 
+    overflow: hidden; 
+} 
 
-#viewer {
-    position: absolute;
-    top: 0;
+* { font-family: 'Inter', sans-serif; } /* Use this font for the entire page */
+html {scroll-behavior: smooth;} /* Enable smooth scrolling */
+body {
     margin: 0;
-    display: none;
-    justify-content: center;
-    align-items: center;
-    inset: 0;
-    background: #000;
-    opacity: 1;
 }
 
-#viewer > button {
-    position: absolute;
-    top: 0; right: 0;
-    margin: 18px;
-    padding: 5px 30px;
-    border: 1px solid white;
-    background: transparent;
-    color: white;
-    border-radius: 50px;
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    z-index: 2;
+header {
+    background-color: goldenrod;
 }
 
-#viewer > button > * { display: inline; }
-video { height: 100%; margin: 0; }
-
-#watch {
+#watch { /* Enrollment ad section */
     height: 100vh;
     display: flex;
 }
-
-#watchheader {
+#watchheader { /* Enrollment ad header */
     width: 50%;
     height: 100%;
     display: flex;
@@ -48,20 +28,14 @@ video { height: 100%; margin: 0; }
     align-items: flex-start;
     padding-left: 50px;
 }
-
-#watchheader > h1 {
+#watchheader > h1{ /* "Keep moving up and moving forward" */
     font-weight: 400;
     letter-spacing: -3px;
     font-size: 80px;
     line-height: 0.9;
     margin: 10% 0;
 }
-
-.material-symbols-outlined {
-    font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
-}
-
-#playbutton {
+#playbutton {  /* Play button */
     width: 33%;
     height: 8%;
     padding: 5px 15px;
@@ -77,75 +51,108 @@ video { height: 100%; margin: 0; }
     transition: background-color 0.2s, color 0.2s;
 }
 
-#playbutton > span { transition: color 0.2s; }
-#playbutton:hover { background: goldenrod; color: black; }
-#playbutton:hover > span { color: black; }
-
-#thumbnail {
-    width: 50%;
-    background: url("video_thumbnail.png") center/cover;
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 300,
+  'GRAD' 0,
+  'opsz' 24
 }
 
-#enrollment {
-    height: 100vh;
+#playbutton > span { transition: color 0.2s;} /* Play button icon */
+
+
+/* Change colors if play button is hovered */
+#playbutton:hover { background: goldenrod; color: black; } 
+#playbutton:hover > span { color: black; }
+
+#thumbnail { width: 50%; background: url("video_thumbnail.png") center/cover;} /* Tourism student image (Clickbate) */
+
+#viewer { /* Black background behind the actual video */
+    position: absolute;
+    top: 0;
+    margin: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    background: #000;
+    opacity: 1;
+}
+#viewer > button { /* Close button */
+    position: absolute;
+    top: 0; right: 0;
+    margin: 18px;
+    padding: 5px 30px;
+    border: 1px solid white;
+    background: transparent;
+    color: white;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    z-index: 2;
+}
+#viewer > button > * { display: inline; } /* Align close button's icon and text */
+
+video { height: 100%; margin: 0; } /* Enrollment.mp4 */
+
+#enrollment { /* Enrollment Section */
+    padding: 10% 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.addressinput, .nameinput {
-    width: 100%;
-    padding: 15px;
-    margin: 15px 0;
-    font-size: 12pt;
-    font-weight: 300;
-    border: solid black;
-    border-width: 0 0 1px 0; /* Default: only bottom border */
-    outline: none; /* Remove default outline */
-}
-
-.addressinput:focus, .nameinput:focus {
-    border: 1px solid black; /* Full border on focus */
-    border-radius: 10px;
-}
-
-#enrollment {
+    background-color: goldenrod;
     border-top: 1px solid black;
 }
 
-form {
-    width: 65%;
+#formInstruction { margin:px 0; } /* "Please fill up the required information */
+
+.addressinput, .nameinput { /* Textfield default state */
+    width: 100%;
+    padding: 15px;
+    margin: 15px 0;
+    font-size: 18pt;
+    font-weight: 300;
+    background-color: transparent;
+    border: solid black;
+    border-width: 0 0 1px 0; 
+    outline: none; 
+    display: flex;
+    flex-direction: column;
+    flex: 1;
 }
 
-#textfields {
+.addressinput:focus, .nameinput:focus {  /* apply effects when textfield is used */
+    border: 1px solid black; 
+    border-radius: 10px;
+}
+
+form {width: 65%;} /* set form width to 65% of enrollment section's */
+
+#textfields { /* div containing addressinputs and name inputs div */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 100px;
     margin: 0 auto;
 }
 
-.nameinputs {
+#studentType { /* div for radio buttons */
     display: flex;
-    flex-direction: column;
-    flex: 1;
+    align-items: center; 
+    gap: 10px; 
 }
 
-.addressinputs {
-    display: flex;
-    flex-direction: column;
-    flex: 1;
+#studentType > label { /* Student Type */ 
+    font-size: 16px;
+    font-weight: 300;
+    vertical-align: middle; 
+    cursor: pointer;
 }
 
-#studentType {
-    display: flex;
-    align-items: center; /* Aligns text and radio buttons vertically */
-    gap: 10px; /* Adds space between elements */
-}
-
-input[type="radio"] {
-    appearance: none; /* Removes default styles */
+input[type="radio"] { /* Radio buttons default style */
+    appearance: none; 
     width: 40px;
     height: 40px;
     border: 1px solid black;
@@ -156,36 +163,21 @@ input[type="radio"] {
     vertical-align: middle;
 }
 
-input[type="radio"]:checked {
-    background-color: goldenrod ; /* Turns solid black when selected */
+input[type="radio"]:checked {  /* Radio buttons' style if checked */
+    background-color: black; 
 }
 
-#studentType > label {
-    font-size: 16px;
-    font-weight: 300;
-    vertical-align: middle; /* Ensures text aligns with the radio button */
-    cursor: pointer; /* Makes clicking the label easier */
-}
-
-#reset, #submit {
-    font-size: 18pt;
-    padding: 15px 30px;
-    margin: 50pt 0;
+#reset, #submit { /* Reset and Submit button default style */
+    background: transparent;
     border: 1px solid black;
     border-radius: 50px;
-    background-color: transparent;
-}
-
-#submit {
-    background-color: black;
-    color: white;
+    font-size: 20px;
+    padding: 12px 25px;
+    margin: 35px 0 0 0;
     transition: 0.2s;
 }
 
-#submit:hover {
-    background-color: goldenrod;
-    color: black;
+#submit:hover, #reset:hover{ /* Reset and Submit button style if hovered */
+    background-color: black;
+    color: goldenrod;
 }
-
-
-
