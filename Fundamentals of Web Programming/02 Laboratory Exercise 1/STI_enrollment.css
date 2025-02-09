@@ -4,7 +4,50 @@
 html {scroll-behavior: smooth;} /* Enable smooth scrolling */
 body {margin: 0;}
 
-header {background-color: #FFC436; }
+header {
+    background-color: #256a94;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header > div > h1 {
+    color: #FFC436;
+    font-size: 150pt;
+    font-weight: 700;
+    letter-spacing: -10px;
+    margin: 0;
+    line-height: 75%;
+    text-transform: uppercase;
+}
+
+header > div > p {
+    margin: 10px ;
+    font-size: 30pt;
+    font-weight: 100;
+    color: white;
+}
+
+header > div > a {
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    border-radius: 50px;
+    font-size: 20pt;
+    padding: 15px 25px;
+    display: inline-block;
+    width: 40%;
+    text-align: center;
+    transition: 0.2s;
+}
+
+header > div > a:hover{
+    border: none;
+    background-color: #FFC436;
+    color:#256a94
+}
 
 #watch {height: 100vh;display: flex;}
 #watchheader { /* Enrollment ad header */

@@ -25,8 +25,17 @@ document.getElementById("closeViewer").onclick = function() {
     video.currentTime = 0;
 }
 
-window.addEventListener("scroll", function() {
-    let thumbnail = document.getElementById("thumbnail");
-    let scrollPosition = window.scrollY;
-    thumbnail.style.backgroundPositionY = `${scrollPosition * 0.3}px`;
-});
+function smoothParallax() {
+    let rect = thumbnail.getBoundingClientRect(); // Get position relative to viewport
+    let offset = rect.top * -0.4; // Adjust speed by changing multiplier
+
+    // Apply background movement only when the div is visible
+    if (rect.top < window.innerHeight && rect.bottom > 0) {
+        thumbnail.style.backgroundPosition = `center ${offset}px`;
+    }
+
+    requestAnimationFrame(smoothParallax);
+}
+
+// Start the loop
+smoothParallax();
