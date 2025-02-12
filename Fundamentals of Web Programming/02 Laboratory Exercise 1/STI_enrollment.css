@@ -100,7 +100,7 @@ header > div > a:hover{
     background-image: url("tourism.png");
     width: 60%;
     background-size: cover;
-    background-position: center center;
+    background-position: center; 
     background-repeat: no-repeat;
 }
 
@@ -118,13 +118,13 @@ header > div > a:hover{
     transition: opacity 0.2s ease-in-out;
 }
 
-#viewer.show {
-    display: flex; /* Ensure it's visible */
-    opacity: 1; /* Fade-in effect */
+#viewer.show { /* Fade-in effect */
+    display: flex; 
+    opacity: 1; 
 }
 
-#viewer.hide {
-    opacity: 0; /* Fade-out effect */
+#viewer.hide { /* Fade-out effect */
+    opacity: 0; 
 }
 
 #viewer > button { /* Close button */
@@ -153,42 +153,42 @@ video { height: 100%; margin: 0; position: fixed;} /* Enrollment.mp4 */
     justify-content: center;
 }
 
-#formInstruction {
-    margin: 10px 0 50px 0;
-}
-
-form {padding-left: 50px;}
-
-form > h1 {
+form > h1 { /* 'Enrollment Form ' */
     font-size: 50pt;
     font-weight: 400;
     margin: auto auto 0 auto;
 }
 
+#formInstruction { /* 'Please fill up the required information' */
+    margin: 10px 0 50px 0;
+}
+
+form {padding-left: 50px;}
+
 #inputFields {display: grid; grid-template-columns: auto auto;}
 
+/* Textfields */
 .field, #studentType {padding: 30px 0;}
 .field > * {display: block;}
 .field > input {
     width: 90%;
-    border: 0px solid black; /* Set a default border */
-    border-bottom-width: 1px; /* Only bottom border visible initially */
+    border: 0px solid black;
+    border-bottom-width: 1px;
     font-size: 15pt;
     font-weight: 400;
     padding: 15pt 10pt;
     margin: 5px 0 0 0;
-    transition: border 0.3s ease, background-color 0.3s ease;
+    transition: border 0.3s ease, background-color 0.3s ease-in;
 }
+.field > input:focus {background-color: #FFC436;}
 
-.field > input:focus {
-    background-color: #FFC436;
-}
-
+/* Specify specific spacing between radio buttons, display these in a single line */
 #studentType > p {display: block;margin: 0;}
 #studentType > * {display: inline-block;}
 #studentType > div {padding: 15pt 15pt 0 0;}
 #studentType > div > label {font-size: 15pt;}
 
+/* Radio Buttons (Enrollee Type) */
 input[type=radio] {
     appearance: none; 
     width: 40px;
@@ -204,6 +204,7 @@ input[type=radio] {
 input[type=radio]:hover {background-color: #256a94;}
 input[type=radio]:checked {background-color: #FFC436;}
 
+/* Submit, Reset buttons */
 #reset, #submit {
     background-color: transparent;
     border: 1px solid black;
@@ -213,17 +214,10 @@ input[type=radio]:checked {background-color: #FFC436;}
     font-size: 15pt;
     transition: 0.2s;
 }
+#reset:hover {background-color: black; color: white;}
+#submit:hover {background: #256a94; color: #FFC436;}
 
-#reset:hover {
-    background-color: black;
-    color: white;
-}
-
-#submit:hover {
-    background: #256a94;
-    color: #FFC436;
-}
-
+/* (For Js) Prevent scrolling when video is displayed */
 .remove-scrolling {
     height: 100%; 
     overflow: hidden; 
