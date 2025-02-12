@@ -24,10 +24,12 @@
             <a href="#enrollment">Submit your Enrollment Form</a>
         </div>
     </header>
+    <!--Video-->
     <section id="watch">
         <div id="watchheader">
             <h1>Keep looking up</span><br>and moving<br>forward</h1>
             <p>Click below to play the STI's enrollment ad</p>
+            <!--Play Button-->
             <button id="playbutton">
                 <span class="material-symbols-outlined">
                     play_arrow
@@ -40,16 +42,19 @@
                 <span class="material-symbols-outlined">close</span>
                 <p>Exit</p>
             </button>
-            <video id="enrollmentVid" controls >
+            <!-- Video and Thumbnail-->
+            <video id="enrollmentVid" poster="Thumbnail.PNG" controls >
                 <source src="Enrollment.mp4" type="video/mp4">
                 Your browser does not support the video tag.
             </video>
         </div>
     </section>  
+    <!-- Enrollment Form -->
     <section id="enrollment">
         <form>
             <h1>Enrollment Form</h1>
             <p id="formInstruction">Please fill up the required information</p>
+            <!-- Text Fields -->
             <div id="inputFields">
                 <div class="field">
                     <label class="inputlabel" for="firstname">First Name</label>
@@ -71,6 +76,7 @@
                     <label class="inputlabel" for="lastname">Last Name</label>
                     <input class="nameinput" id="lastname" type="text">
                 </div> 
+                <!-- Radio Buttons -->
                 <div id="studentType">
                     <p>Enrollee Type: </p>
                     <div>
@@ -87,10 +93,10 @@
                     </div>
                 </div>          
             </div>
+            <!-- Reset and Submit-->
             <input id="reset" type="reset" value="Reset">
             <input id="submit" type="submit" value="Submit">
         </form>
     </section>
     <script src="STI_enrollment.js"></script>
-</body>
 </html>

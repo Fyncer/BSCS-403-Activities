@@ -97,7 +97,7 @@ header > div > a:hover{
 #playbutton:hover > span { color: #FFC436; }
 
 #thumbnail {
-    background-image: url("video_thumbnail.png");
+    background-image: url("tourism.png");
     width: 60%;
     background-size: cover;
     background-position: center center;
