@@ -1,21 +1,87 @@
+<!-- Uses Internal CSS-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="04Lab1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
     <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100%;
+            font-family: "DM Sans", sans-serif;
+            font-size: 18pt;
+            letter-spacing: -1px;
+            font-weight: 300;
+            border: 2px solid black;
+            color: white;
+        }
+
+        #container {
+            min-height: 100vh;
+            display: grid;
+            grid-template-columns: 10% 45% 45%; 
+            grid-template-rows: 1fr 5fr 1fr;
+        }
+
+        #container > * {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header {
+            grid-area: 1 / 1 / 1 / 5;
+            border-bottom: 2px solid black;
+            background-color: #f94144;
+        }
+
+        nav {
+            grid-area: 2 / 1 / 2 / 1;
+            background-color: #9d7f9d;
+            border-right: 2px solid black;
+        }
+
+        section {
+            border: 2px solid black;
+            margin: 10px;
+            overflow: hidden;
+            background-size: cover;
+        }
+
+        img { display: none; }
+
+        #img1 {
+            background-image: url("https://img.freepik.com/free-vector/gradient-lo-fi-illustrations_52683-82982.jpg?t=st=1740730537~exp=1740734137~hmac=c404dcc38d8db1cede4725fec52e34e2c38a1611807bea06a751582ab2706101&w=1380");
+            background-position-x: right;
+        }
+
+        #img2 {
+            background-image: url("https://img.freepik.com/free-vector/gradient-lo-fi-illustrations_52683-82981.jpg?t=st=1740730589~exp=1740734189~hmac=573d8713ccfbe2aa084bfed78fc1480016adb07f0be7079641a81e05327d2104&w=1380");
+        }
+
+        footer {
+            grid-area: 3 / 1 / 3/ 5;
+            border-top: 2px solid black;
+            background-color: #90be6d;
+        }
+    </style>
 </head>
 <body>
     <div id="container">
         <header class="">
-            1
+            Header
         </header>
-        <nav>2</nav>
-        <article>3</article>
-        <article>4</article>    
+        <nav>Navigation</nav>
+        <section id="img1"><article><img src="https://img.freepik.com/free-vector/gradient-lo-fi-illustrations_52683-82982.jpg?t=st=1740730537~exp=1740734137~hmac=c404dcc38d8db1cede4725fec52e34e2c38a1611807bea06a751582ab2706101&w=1380"></article></section>
+        <section id="img2"><article><img src="https://img.freepik.com/free-vector/gradient-lo-fi-illustrations_52683-82982.jpg?t=st=1740730537~exp=1740734137~hmac=c404dcc38d8db1cede4725fec52e34e2c38a1611807bea06a751582ab2706101&w=1380"></article></section>    
         <footer>
-            5
+            Footer
         </footer>
     </div>
 </body>
