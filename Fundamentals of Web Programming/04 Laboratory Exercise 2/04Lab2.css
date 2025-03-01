@@ -1,0 +1,24 @@
+body {
+    min-height: 100vh;
+    margin: 0;
+}
+
+#cutImagesSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.view {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    gap: 3px;
+}
+
+.cut {
+    display: flex;
+    justify-content: center;
+    width: 320px;
+    height: 400px;
+}
