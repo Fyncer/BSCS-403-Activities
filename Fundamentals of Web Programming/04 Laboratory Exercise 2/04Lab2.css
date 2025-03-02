@@ -1,24 +1,61 @@
 body {
-    min-height: 100vh;
     margin: 0;
+    height: 100vh;
 }
 
-#cutImagesSection {
-    height: 100vh;
+h1 {
+    font-family: "DM Serif Display", serif;
+    font-size: 45pt;
+}
+
+p, a { font-family: "Poppins", sans-serif; }
+
+
+header {
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#ribbon { display: grid; }
+
+#headHeading {
+    writing-mode: sideways-lr;
+    text-align: left;
+    padding: 35px;
+}
+
+#headHeading > * { margin: 0; }
+
+#view {
+    padding: 35px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+#moreInfo {
+     text-align: center;
+     padding: 35px 50px; 
+     align-content: flex-end;
+     text-decoration: none;
+     color: black;
+}
+
+#moreInfo:hover, #moreInfo:active { color: black; }
+
+.cut {
     justify-content: center;
+    display: flex;
     align-items: center;
 }
 
-.view {
-    display: grid;
-    grid-template-columns: repeat(3, auto);
-    gap: 3px;
-}
+img { height: 380px; }
 
-.cut {
-    display: flex;
-    justify-content: center;
-    width: 320px;
-    height: 400px;
-}
+#information { padding: 45px; }
+
+#about { flex-direction: row-reverse; }
+
+#information > p { text-align: justify; }
+
+video { width: 50%; }
+
