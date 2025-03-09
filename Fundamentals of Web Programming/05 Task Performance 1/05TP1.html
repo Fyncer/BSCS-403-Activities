@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>05 Task Performance 1</title>
+</head>
+<body style="min-height: 100vh; display: flex; justify-content: center; align-items: center;">
+    <p style="font-size: 30pt;">Check the 'console' for answers in #2</p>
+    <script>
+        function checkInput(i) {
+            var blank = / /;
+            if (isNaN(i) || i === "" || blank.test(i)) { 
+                alert("Input invalid. Try again."); 
+                return true;
+            }
+            else if (i === null) { 
+                alert("I'm sorry, but you can't skip this."); 
+                return true;
+            }
+        }
+        console.log("Complete the prompts first to view answers for #2 ");
+        alert("Complete the following prompts to see answers for #2");
+
+        // A
+
+        // 1.A
+        var age;
+        var question1Loop = true;
+        do {
+            age =  window.prompt("Enter you age (must be 25 or older): ");
+            if (checkInput(age)) {}
+            else {
+                if (age >= 25) {
+                    alert(`Access Granted. You are ${age} years old`);
+                    question1Loop = false;
+                }
+                else if (age < 0) { alert("Negative numbers are not accepted. Try again"); }
+                else { alert("Access Denied. You are younger than 25"); }
+            }
+        } while(question1Loop)
+
+        // 1.B
+        var num;
+        var question2Loop = true;
+        do {
+            num  = window.prompt("Enter a number (must be lower than 100): ");
+            if (checkInput(num)){}
+            else {
+                if (num < 100) {
+                    alert(`${num} is lower than 100. Input accepted`);
+                    question2Loop = false;
+                }
+                else { alert(`${num} is higher than 100. Try again.`); }
+            }
+        } while(question2Loop)
+
+        // 2 ( check console for results )
+
+        // 2.A
+        console.log("(2.A) Printing 0 - 30")
+        for(i = 0; i < 31; i++) { console.log(i); }
+        // 2.B
+        console.log("\n(2.B) Printing all even values from 0 - 40")
+        for(i = 0; i < 41; i++) { if(i % 2 == 0) console.log(i); }
+        // 2.C
+        console.log("\n(2.C) Printing all multiples of 3 from 40 - 10")
+        for(i = 40; i > 10; i--) { if(i % 3 == 0) console.log(i); }
+    </script>
+</body>
+</html>
