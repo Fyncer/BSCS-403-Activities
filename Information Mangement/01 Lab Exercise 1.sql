@@ -1,0 +1,83 @@
+use remakes
+go
+
+create table TBL_CUSTOMERS (
+	CUSTOMER_ID bigint primary key,
+	NAME varchar(50),
+	ADDRESS varchar(200),
+	CREDIT_LIMIT INT
+);
+
+create table TBL_Contacts (
+	CONTACT_ID bigint primary key,
+	FIRST_NAME varchar(50),
+	LAST_NAME varchar(50),
+	EMAIL varchar(100),
+	PHONE int,
+	CUSTOMER_ID bigint
+
+	foreign key (CUSTOMER_ID) references TBL_CUSTOMERS(CUSTOMER_ID)
+);
+
+CREATE TABLE TBL_ORDERS (
+	ORDER_ID bigint primary key,
+	CUSTOMER_ID bigint,
+	STATUS varchar(50),
+	EMPLOYEE_ID bigint,
+	ORDER_DATE varchar(50), *connect to table employee, employee_id
+
+	foreign key (CUSTOMER_ID) references TBL_CUSTOMERS(CUSTOMER_ID)
+);
+
+CREATE TABLE TBL_ITEMS (
+	ITEM_ID bigint primary key,
+	ORDER_ID bigint,
+	PRODUCT_ID bigint, 
+	Quantity int,
+	PRICE decimal(5,2)
+);
+
+CREATE TABLE TBL_PRODUCTS (
+	PRODUCT_ID bigint primary key,
+	PRODUCT_NAME varchar(200),
+	DESCRIPTION varchar(500),
+	STANDARD_COST decimal(5,2),
+	LIST_PRICE decimal(5,2),
+	CATEGORY_ID bigint 
+);
+
+CREATE TABLE TBL_INVENTORIES (
+	PRODUCT_ID bigint,
+	WAREHOUSE_ID bigint, 
+	QUANTITY int
+);
+
+CREATE TABLE TBL_PRODUCT_CATEGORIES (
+	CATEGORY_ID bigint primary key,
+	CATEGORY_NAME varchar(50)
+);
+
+CREATE TABLE TBL_EMPLOYEES (
+	EMPLOYEE_ID bigint primary key,
+	FIRST_NAME varchar(50),
+	LAST_NAME varchar(50),
+	EMAIL varchar(100),
+	PHONE int,
+	HIRE_DATE varchar(30),
+	JOB_TITLE varchar(100)
+);
+
+CREATE TABLE TBL_WAREHOUSES (
+	WAREHOUSE_ID bigint primary key,
+	WAREHOUSE_NAME varchar(100)
+);
+
+
+ ALTER TABLE TBL_ORDERS ADD FOREIGN KEY(CUSTOMER_ID) REFERENCES TBL_CUSTOMERS(CUSTOMER_ID)
+ ALTER TABLE TBL_ORDERS ADD FOREIGN KEY(EMPLOYEE_ID) REFERENCES TBL_EMPLOYEES(EMPLOYEE_ID)
+ ALTER TABLE TBL_ITEMS ADD 
+ FOREIGN KEY(ORDER_ID) REFERENCES TBL_ORDERS(ORDER_ID),
+ FOREIGN KEY(PRODUCT_ID) REFERENCES TBL_PRODUCTS(PRODUCT_ID);
+ ALTER TABLE TBL_PRODUCTS ADD FOREIGN KEY (CATEGORY_ID) REFERENCES TBL_PRODUCT_CATEGORIES(CATEGORY_ID)
+
+
