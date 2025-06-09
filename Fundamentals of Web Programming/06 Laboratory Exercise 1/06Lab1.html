@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Questrial&display=swap" rel="stylesheet">
+    <title>06 Laboratory Exercise 1</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Questrial", sans-serif;
+        }
+
+        .container {
+            display: flex;
+            align-content: space-around;
+        }
+
+        .container > * {
+            margin: 20px;
+        }
+
+        h1 { 
+            font-size: 75pt;
+            font-weight: lighter;
+        }
+
+        #age {
+            display: inline-block;
+            width: 400px;
+            font-family: "Questrial", sans-serif;
+            text-align: center;
+            font-size: 150pt;
+            font-weight: bold;
+            outline: 0;
+            border: 5px solid black;
+            border-radius: 50px;
+        }
+
+        #compare { 
+            margin: 50px; 
+            font-size: 15pt;
+            cursor: pointer;
+        }
+
+        #compare:hover {
+            text-decoration: underline;
+        }
+
+        #result {
+            font-size: 50pt;
+            font-weight: bold;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 1;
+            height: 100vh;
+            width: 100%;
+            background-color: #1DCD9F;
+            color: white;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>How old<br>is your<br>favorite<br>artist?</h1>
+        <input type="text" id="age" value="?">
+    </div>
+    <p id="compare" onclick="check()">Click here to compare age with Google's</p> <!-- Triggers function "check()" when clicked -->
+    <div id="result" onclick="remove()">They're 25 and they're as old as Google</div>
+
+    <script>
+        function check() { // function "check" gets triggered by clicking the paragraph element with an id of "compare"
+
+            // retrieve the input value of the element with an id of "age"
+            var artistAge = document.getElementById("age").value; 
+
+            // prepare element "result" for later uses
+            var result = document.getElementById("result");
+
+            // Set Google's age
+            var googleAge = 25;
+
+            // Do this if the input is not a valid integer or blank
+            if (isNaN(artistAge) || artistAge.trim() === "") { 
+                alert("Please enter a valid number.");  // Display the following message for "invalid" inputs 
+                result.textContent = ""; // Make sure that "result"  has no text ( to avoid confusion )
+            } 
+            else { // Otherwise, compare age to Google using these conditions
+
+                // First, convert the input value into actual integer
+                artistAge = parseInt(artistAge); 
+
+                // Next, compare it
+                if (artistAge > googleAge) {
+                    alert(`They're ${artistAge} and they're older than Google.`); // Display alert message if the age is older than Google's
+                    result.textContent = "";
+                } else if (artistAge === googleAge) {
+                    result.textContent = `They're ${artistAge} and they're as old as Google.`; // Write this message if the age is same as Google's
+                } else {
+                    result.textContent = `They're ${artistAge} and they're younger than Google.`; // Write this message if the age is younger than Google's
+                }
+            }
+        }
+    </script>
+</body>
+</html>
