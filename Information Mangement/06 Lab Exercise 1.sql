@@ -1,3 +1,5 @@
+-- 06 Lab Exercise 1
+
 create database myDB;
 use myDB;
 

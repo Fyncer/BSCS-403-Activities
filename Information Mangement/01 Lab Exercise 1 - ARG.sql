@@ -1,5 +1,8 @@
-use remakes
-go
+CREATE DATABASE LAB101ARG
+GO
+
+USE LAB101ARG
+GO
 
 create table TBL_CUSTOMERS (
 	CUSTOMER_ID bigint primary key,

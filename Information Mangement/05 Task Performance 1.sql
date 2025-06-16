@@ -1,5 +1,8 @@
-use Libramonte_05TP1
-go
+CREATE DATABASE LAB501
+GO
+
+USE LAB501
+GO
 
 CREATE TABLE contact_type (
 	id_contact_type int primary key,

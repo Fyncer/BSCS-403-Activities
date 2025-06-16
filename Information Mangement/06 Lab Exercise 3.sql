@@ -1,6 +1,9 @@
-create database ENROLLEMENT_MANAGEMENT_SYSTEM
+-- 06 Lab Exercise 3
 
+create database ENROLLEMENT_MANAGEMENT_SYSTEM
+GO
 use ENROLLEMENT_MANAGEMENT_SYSTEM;
+GO
 
 create table "School Year" (
 	school_yr_ID int primary key,

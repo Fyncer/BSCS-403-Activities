@@ -1,6 +1,10 @@
---create database Inventory_Management
-use Inventory_Management
+-- 06 Lab Exercise 2
 
+CREATE DATABASE Inventory_Management
+GO
+
+USE Inventory_Management
+GO
 create table Category (
 	Category_ID int primary key,
 	Category_Name varchar(50),

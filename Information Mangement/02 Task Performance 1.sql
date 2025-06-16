@@ -1,5 +1,7 @@
-<<<<<<< HEAD
-USE Libramonte_05TP1
+CREATE DATABASE TP201
+GO
+
+USE TP201
 GO
 
 CREATE TABLE contact_type (
@@ -93,7 +95,7 @@ INSERT INTO contact (id_contact, id_person, id_contact_type, contact) VALUES
 (1, 'New York', '5th Avenue', '742', '10001', 'USA', 'Times Square', 40.7580, -73.9855),
 (2, 'Los Angeles', 'Sunset Blvd', '200', '90028', 'USA', 'Hollywood', 34.0928, -118.3287),
 (3, 'London', 'Baker Street', '221B', 'NW1 6XE', 'UK', 'Sherlock Holmes Museum', 51.5238, -0.1586),
-(4, 'Paris', 'Champs-Élysées', '150', '75008', 'France', 'Eiffel Tower', 48.8584, 2.2945),
+(4, 'Paris', 'Champs-ï¿½lysï¿½es', '150', '75008', 'France', 'Eiffel Tower', 48.8584, 2.2945),
 (5, 'Tokyo', 'Shibuya', '1-1', '150-0002', 'Japan', 'Shibuya Crossing', 35.6595, 139.7004);
 
 INSERT INTO relation (id_relation, id_person1, id_person2, description, id_relation_type) VALUES
@@ -224,7 +226,7 @@ INSERT INTO contact (id_contact, id_person, id_contact_type, contact) VALUES
 (1, 'New York', '5th Avenue', '742', '10001', 'USA', 'Times Square', 40.7580, -73.9855),
 (2, 'Los Angeles', 'Sunset Blvd', '200', '90028', 'USA', 'Hollywood', 34.0928, -118.3287),
 (3, 'London', 'Baker Street', '221B', 'NW1 6XE', 'UK', 'Sherlock Holmes Museum', 51.5238, -0.1586),
-(4, 'Paris', 'Champs-Élysées', '150', '75008', 'France', 'Eiffel Tower', 48.8584, 2.2945),
+(4, 'Paris', 'Champs-ï¿½lysï¿½es', '150', '75008', 'France', 'Eiffel Tower', 48.8584, 2.2945),
 (5, 'Tokyo', 'Shibuya', '1-1', '150-0002', 'Japan', 'Shibuya Crossing', 35.6595, 139.7004);
 
 INSERT INTO relation (id_relation, id_person1, id_person2, description, id_relation_type) VALUES
