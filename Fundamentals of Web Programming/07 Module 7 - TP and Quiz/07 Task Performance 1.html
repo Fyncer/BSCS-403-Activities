@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>07 Laboratory Exercise 1</title>
+</head>
+<body>
+    <script>
+        function outer() {
+            let name = "outer";
+            let str = "innner()";
+            return str;
+        }
+
+        function inner() {
+            let name = "inner";
+            return "Hello Ren!";
+        }
+
+        console.log("before outer() call");
+        // debugger     (Add in step 6 until 14)
+        console.log(outer());
+        console.log("after  outer() call");
+    </script>
+</body>
+</html>
