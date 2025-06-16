@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\buildMultiTargeting\PT_Libramonte_Ren.props" />
+</Project>

@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ren\\source\\repos\\MyFirstWebApp_Libramonte_Ren\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{99F38367-FE8F-4ADB-85B8-511DAB62FC52}|MyFirstWebApp_Libramonte_Ren.csproj|c:\\users\\ren\\source\\repos\\myfirstwebapp_libramonte_ren\\pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F38367-FE8F-4ADB-85B8-511DAB62FC52}|MyFirstWebApp_Libramonte_Ren.csproj|solutionrelative:pages\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{99F38367-FE8F-4ADB-85B8-511DAB62FC52}|MyFirstWebApp_Libramonte_Ren.csproj|c:\\users\\ren\\source\\repos\\myfirstwebapp_libramonte_ren\\pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{99F38367-FE8F-4ADB-85B8-511DAB62FC52}|MyFirstWebApp_Libramonte_Ren.csproj|solutionrelative:pages\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ren\\source\\repos\\MyFirstWebApp_Libramonte_Ren\\Pages\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\Ren\\source\\repos\\MyFirstWebApp_Libramonte_Ren\\Pages\\Privacy.cshtml",
+              "RelativeToolTip": "Pages\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T06:35:42.466Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ren\\source\\repos\\MyFirstWebApp_Libramonte_Ren\\Pages\\Index.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ren\\source\\repos\\MyFirstWebApp_Libramonte_Ren\\Pages\\Index.cshtml",
+              "RelativeToolTip": "Pages\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T06:35:12.756Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

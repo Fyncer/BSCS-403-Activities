@@ -1,0 +1,122 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:views\\movie\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:pages\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:views\\employee\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:controllers\\moviecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|c:\\users\\ren\\documents\\coding\\bscs-403-activities\\fundamentals of web programming\\08 module 8\\pt_libramonte_ren\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{457366DA-B81E-405A-A607-0AAE075C4B85}|PT_Libramonte_Ren.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Pages\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Pages\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Pages\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAABDAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T08:02:22.743Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Views\\Movie\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Movie\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Views\\Movie\\Index.cshtml",
+              "RelativeToolTip": "Views\\Movie\\Index.cshtml",
+              "ViewState": "AgIAABwAAAAAAAAAAAAUwDUAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T07:57:48.837Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MovieController.cs",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Controllers\\MovieController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MovieController.cs",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Controllers\\MovieController.cs",
+              "RelativeToolTip": "Controllers\\MovieController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAgAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:57:20.205Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Views\\Employee\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Employee\\Index.cshtml",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Views\\Employee\\Index.cshtml",
+              "RelativeToolTip": "Views\\Employee\\Index.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-06-16T07:33:21.202Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmployeeController.cs",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Controllers\\EmployeeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\EmployeeController.cs",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Controllers\\EmployeeController.cs",
+              "RelativeToolTip": "Controllers\\EmployeeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:32:44.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\Ren\\Documents\\Coding\\BSCS-403-Activities\\Fundamentals of Web Programming\\08 Module 8\\PT_Libramonte_Ren\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-16T07:25:53.924Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

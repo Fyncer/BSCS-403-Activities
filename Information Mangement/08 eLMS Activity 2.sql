@@ -1,46 +1,42 @@
 CREATE DATABASE eLMSAct802
-GO
-	
-USE eLMSAct802
+
+use eLMSAct802
 GO
 
-CREATE TABLE Users (
-	UserID int primary key,
-	Username varchar(200),
-	DateCreated date  -- (Alternatively, should be named as 'UsersDateCreated') to avoid confusion with the Picture table column
+CREATE TABLE Vendors (
+	VendorID varchar(50) primary key not null,
+	VendorName varchar(200),
+	ContactNum varchar(200)
 );
 
-CREATE TABLE Pictures (
-	PictureID int primary key,
-	FileName varchar(200),
-	UserID int,
-	DateCreated date,  -- (Alternatively, should be named as 'PicDateCreated') to avoid confusion with the Picture table column
+CREATE TABLE Items (
+	ItemID varchar(200) primary key not null,
+	ItemDesc text,
+	VendorID varchar(50),
 
-	FOREIGN KEY (UserID) REFERENCES Users(UserID)
+	FOREIGN KEY (VendorID) references Vendors(VendorID)
 );
 
-INSERT INTO Users (UserID, Username, DateCreated) VALUES 
-	(001, 'sparsley0', '2019-02-19'),
-	(002, 'dsumshon1', '2018-12-24'),
-	(003, 'hpointing2', '2018-12-11'),
-	(004, 'smannagh3', '2018-08-05'),
-	(005, 'gstarsmore4', '2018-07-09'),
-	(006, 'dzuann5', '2019-01-09');
+INSERT INTO Vendors (VendorID, VendorName, ContactNum) VALUES 
+	('V00001', 'Universal Robina Corporation', '8633-7631'),
+	('V00002', 'Liwayway Marketing Corporation', '8844-8441'),
+	('V00003', 'Monde Nissin', '7759-7500'),
+	('V00004', 'W.L FOOD PRODUCTS', '8800-3405');
 
-INSERT INTO Pictures (PictureID, FileName, UserID, DateCREATED) VALUES 
-	(1001, 'laptop.jpeg', 003, '2019-02-07'),
-	(1002, 'sti_orca.jpeg', 007, '2019-09-04'),
-	(1003, 'home.jpeg', 005, '2019-02-16'),
-	(1004, 'bsit.jpeg', 001, '2019-10-19');
+INSERT INTO Items (ItemID, ItemDesc, VendorID) VALUES 
+	('P000101', 'Jack n Jill Piatos', 'V00001'),
+	('P000102', 'Jack n Jill Nova', 'V00001'),
+	('P001005', 'Oishi Prawn Crackers', 'V00002'),
+	('P030007', 'Regent Cheese Ring', 'V00004');
 
 -- Full Join
-Select Users.Username, Pictures.Filename FROM Users Full Join Pictures on Users.UserID = Pictures.PictureID;
+Select Vendors.VendorName, Items.ItemDesc FROM Vendors Full Join Items on Vendors.VendorID = Items.VendorID;
 
 -- Inner Join
-Select Users.Username, Pictures.Filename FROM Users Inner Join Pictures on Users.UserID = Pictures.PictureID;
+Select Vendors.VendorName, Items.ItemDesc FROM Vendors Inner Join Items on Vendors.VendorID = Items.VendorID;
 
 -- Left Join
-Select Users.Username, Pictures.Filename FROM Users Left Join Pictures on Users.UserID = Pictures.PictureID;
+Select Vendors.VendorName, Items.ItemDesc FROM Vendors Left Join Items on Vendors.VendorID = Items.VendorID;
 
 -- Right Join
-Select Users.Username, Pictures.Filename FROM Users Right Join Pictures on Users.UserID = Pictures.PictureID;
+Select Vendors.VendorName, Items.ItemDesc FROM Vendors Right Join Items on Vendors.VendorID = Items.VendorID;

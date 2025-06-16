@@ -1,0 +1,57 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+    Layout = "~/Pages/Shared/_Layout.cshtml";
+
+    <style>
+        table {
+            width: 100%;
+            table-layout: fixed;
+        }
+        th {
+            font-weight: bold;
+            padding: 10px 0;
+        }
+        td {
+            padding: 10px 0;
+            border-width: 0 0 2px 0;
+        }
+        #heading {
+            border-color: black;
+            border-width: 0 0 3px 0;
+        }
+    </style>
+
+    <h1 class="d-flex justify-content-center">List of Employees</h1>
+    <table>
+        <thead>
+            <tr id="heading">
+                <th>#</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>1</td>
+                <td>Ren</td>
+                <td>Libramonte</td>
+                <td>PHP 100,000</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Eurenz</td>
+                <td>Catanduanez</td>
+                <td>PHP 1,000</td>
+            <tr>
+                <td>3</td>
+                <td>Kenneth</td>
+                <td>Baguion</td>
+                <td>PHP 100,000,000</td>
+            </tr>
+            </tr>
+        </tbody>
+    </table>
+}
